@@ -1,0 +1,13 @@
+spring:
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  r2dbc:
+    driver: h2
+    url: r2dbc:h2:mem:///player?options=DB_CLOSE_DELAY=-1
+    username:
+    password:
+    pool:
+      enabled: false
+      initial-size: 5
